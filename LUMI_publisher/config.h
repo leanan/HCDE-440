@@ -3,7 +3,8 @@
 // visit io.adafruit.com if you need to create an account,
 // or if you need your Adafruit IO key.
 #define IO_USERNAME    "leana_n"
-#define IO_KEY         "138c3cd023f94fc9a08b597bb1cd1764" // Personal Adafruit IO Key
+#define IO_KEY         "" // Personal Adafruit IO Key 
+
 
 /******************************* WIFI **************************************/
 
@@ -13,11 +14,12 @@
 //   - Feather M0 WiFi -> https://www.adafruit.com/products/3010
 //   - Feather WICED -> https://www.adafruit.com/products/3056
 
-#define WIFI_SSID  "University of Washington"
-#define WIFI_PASS  ""
+#define WIFI_SSID         "University of Washington"                // wifi network name
+#define WIFI_PASS         ""                                       //wifi password
 
 
-// comment out the following two lines if you are using fona or ethernet
+// ADAFRUIT
+// https://io.adafruit.com/leana_n/dashboards/hcde440-final
 #include "AdafruitIO_WiFi.h"
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 
